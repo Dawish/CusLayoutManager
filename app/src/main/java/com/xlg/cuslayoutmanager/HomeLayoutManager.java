@@ -101,6 +101,16 @@ public class HomeLayoutManager extends RecyclerView.LayoutManager {
     }
 
     @Override
+    public boolean canScrollVertically() {
+        return super.canScrollVertically();
+    }
+
+    @Override
+    public int scrollVerticallyBy(int dy, RecyclerView.Recycler recycler, RecyclerView.State state) {
+        return super.scrollVerticallyBy(dy, recycler, state);
+    }
+
+    @Override
     public int scrollHorizontallyBy(int dx, RecyclerView.Recycler recycler, RecyclerView.State state) {
 //
 
